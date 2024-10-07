@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN link untuk Tailwind CSS, Kaya Bootstrap juga-->
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!-- Cara Baca:
+m: margin atas,kanan,bawah,kiri
+mt: margin top
+mr: margin right
+mb: margin bottom 
+ml-2: margin left 2/8px (1 = 4px) dan seterusnya..
+** Bisa juga mt-[23px], lebih flexible untuk angka px-nya
+
+
+py: padding top & bottom
+px: padding left & right
+
+
+bg: background
+
+-->
+
+<body class="flex flex-col  items-center justify-center min-h-screen m-0 p-0">
+    <div class="flex justify-center w-[1100px] mb-5 mb-">
+        <div class="flex w-4/5 bg-cover bg-center" style="background-image: url('banner.jpg');">
+            <div class="flex w-full bg-gradient-to-r from-[#ffffff2a] to-[#ffffff] ">
+                <div class="w-2/5">
+                    <!-- Kosongkeun -->
+                </div>
+                <div class="w-3/5 p-12">
+                    <h1 class="my-3 text-4xl font-bold">Achievment</h1>
+                    <p class="mb-4">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem minima, consequatur minus
+                        praesentium voluptate eum corrupti sed ex consequuntur id?
+                    </p>
+                    <button class="mr-2 px-5 py-2 bg-blue-600 text-white hover:bg-blue-700">
+                        More
+                    </button>
+                    <button class="px-5 py-2 bg-blue-600 text-white hover:bg-blue-700">
+                        Watch Video
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/5 bg-gray-800 text-white flex items-center justify-center">
+            <ul class="list-none p-0 m-0">
+                <li class="py-2 text-left cursor-pointer hover:bg-gray-700">Beranda</li>
+                <li class="py-2 text-left cursor-pointer hover:bg-gray-700">Profil</li>
+                <li class="py-2 text-left cursor-pointer hover:bg-gray-700">Kontak Kami</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
