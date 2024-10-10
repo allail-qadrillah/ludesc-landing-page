@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Play, XIcon } from 'lucide-react';
+import { XIcon } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 
@@ -72,8 +72,6 @@ export default function VideoDialog({
   text,
   animationStyle = 'from-center',
   videoSrc,
-  thumbnailSrc,
-  thumbnailAlt = 'Video thumbnail',
   className
 }: HeroVideoProps) {
   const [isVideoOpen, setIsVideoOpen] = useState(false);

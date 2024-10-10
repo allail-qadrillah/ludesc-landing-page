@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Link from 'next/link';
 import Image from 'next/image';
 import { HiMenuAlt3, HiX, HiOutlineShoppingCart } from 'react-icons/hi';
-import MenuDekstop from "./1-MenuDekstop/01-MenuDekstop";
 import MenuMobile from "./3-MenuMobile/MenuMobile";
 
 export default function Navbar() {
@@ -25,12 +24,12 @@ export default function Navbar() {
                     {/* <MenuDekstop/> */}
                 </div>
                 <div className="w-1/5 flex">
-                    <div className="w-1/2 flex justify-around">
+                    {/* <div className="w-1/2 flex justify-around">
                         <ul className="hidden lg:flex">
                             <li className="mx-2">EN</li>
                             <li className="mx-2">ID</li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className="hidden w-1/2 md:flex justify-end">
                         <HiOutlineShoppingCart size={24} className='' />
                     </div>
